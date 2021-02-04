@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF8'>
+  <title>CODE GENE</title>
+  <script type='text/javascript' src='http://ajax.microsoft.com/ajax/jquery/jquery-3.0.0.js'></script>
+  <script type='text/javascript' src='http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js'></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <link href='./assets/stylesheets/main.css' rel='stylesheet'>
+</head>
+
+<body>
+  <form id='generate-form'>
+    <div class='main-area clearfix'>
+      <div class='form-group inout-area'>
+        <textarea class='form-control' id='template-input' placeholder='テンプレートを入力' cols='30' wrap='off'></textarea>
+        <textarea  class='form-control' id='generated-code' placeholder='ここに出力されます' cols='30' wrap='off'></textarea>
+      </div>
+      <div class='element-area'>
+        <div class='element-unit'>
+            <textarea class='form-control element-input' id='element-1' placeholder='要素1を入力' cols='20' wrap='off'></textarea>
+            <input class='form-control element-sub' id='element-sub-1' value='<Sub1>' readonly onclick='copyToClipboard(1)' onblur='clearElementSub(1)'>
+        </div>
+        <div class='element-unit'>
+            <textarea class='form-control element-input' id='element-2' placeholder='要素2を入力' cols='20' wrap='off'></textarea>
+            <input class='form-control element-sub' id='element-sub-2' value='<Sub2>' readonly onclick='copyToClipboard(2)' onblur='clearElementSub(2)'>
+        </div>
+        <div class='element-unit'>
+            <textarea class='form-control element-input' id='element-3' placeholder='要素3を入力' cols='20' wrap='off'></textarea>
+            <input class='form-control element-sub' id='element-sub-3' value='<Sub3>' readonly onclick='copyToClipboard(3)' onblur='clearElementSub(3)'>
+        </div>
+        <div class='element-unit'>
+            <textarea class='form-control element-input' id='element-4' placeholder='要素4を入力' cols='20' wrap='off'></textarea>
+            <input class='form-control element-sub' id='element-sub-4' value='<Sub4>' readonly onclick='copyToClipboard(4)' onblur='clearElementSub(4)'>
+        </div>
+      </div>
+    </div>
+    <div class='generate-button'>
+      <button type='submit' class='btn btn-primary'>GENERATE CODE !!</button>
+    </div>
+  </form>
+  <script src='renderer.js'></script>
+</body>
+
+</html>
