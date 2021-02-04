@@ -1,0 +1,78 @@
+body {
+  -webkit-app-region: drag;
+  height: calc(100vh - 40px);
+  margin: 20px 24px;
+  background-color: #27313D;
+  background-image: url('../images/texture.png');
+}
+
+textarea, input {
+  color: #F5F5F5 !important;
+  background-color: #27313D !important;
+  background-image: url('../images/texture.png') !important;
+}
+
+.btn-primary {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #60C4B0;
+  background-image: url('../images/texture.png');
+  border-color: #26AE90;
+  color: #F5F5F5;
+  font-size:16px;
+}
+.btn-primary:hover {
+  background-color: #26AE90;
+  border-color: #26AE90;
+}
+
+#generate-form {
+  height: 100%;
+}
+.main-area {
+  height: calc(100% - 15px - 44px);
+}
+
+#template-input {
+  height: 50%;
+}
+
+#generated-code{
+  margin-top: 4px;
+  height: calc(50% - 4px);
+}
+
+.form-group {
+  margin: 0;
+}
+
+.inout-area {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+
+.element-area {
+  float: left;
+  height: 100%;
+  width: calc(70% - 4px);
+  margin-left: 4px;
+}
+
+.element-unit {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+.element-input {
+  height: calc(100% - 34px - 4px) !important;
+}
+
+.element-sub {
+  margin-top: 4px;
+}
+
+input.element-sub {
+  text-align: center !important;
+}
