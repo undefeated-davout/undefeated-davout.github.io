@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+
+CodeGene-darwin-x64/
+CodeGene-win32-x64/
+node_modules/
+
+*.log
